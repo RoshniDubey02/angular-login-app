@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    background-color: #111;
+}
+/* General styling for mat-error */
+mat-error {
+    color: #fff;
+    font-size: 10px;
+    margin-top: -7px;
+    padding-left: 6px;
+}
+
+/* #fff border for invalid and touched inputs */
+input.ng-touched.ng-invalid:not([readonly]):not([disabled]) {
+    border-color: #fff;
+}
+
+textarea.ng-touched.ng-invalid:not([readonly]):not([disabled]) {
+    border-color: #fff;
+}
+
+mat-select.ng-touched.ng-invalid:not([readonly]):not([disabled]) {
+    border-color: #fff;
+}

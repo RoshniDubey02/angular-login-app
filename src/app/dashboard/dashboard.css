@@ -1,0 +1,72 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e293b;
+  color: #fff;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background: #ef4444;
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 30px;
+}
+
+.welcome h1 {
+  margin-bottom: 8px;
+  color: #1e293b;
+}
+
+.welcome p {
+  color: #64748b;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 30px 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 14px;
+}

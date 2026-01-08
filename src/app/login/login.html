@@ -1,0 +1,31 @@
+<!--ring div starts here-->
+<div class="ring">
+    <i></i>
+    <i></i>
+    <i></i>
+    <form [formGroup]="loginForm">
+        <div class="login">
+            <h2>Login</h2>
+            <div class="inputBx">
+                <input type="text" placeholder="Username *" formControlName="email" appCustomValidator="required">
+            </div>
+            <div class="inputBx">
+                <input type="password" placeholder="Password *" formControlName="password"
+                    appCustomValidator="required">
+            </div>
+            <!-- <div class="inputBx"> -->
+            <!-- From Uiverse.io by Spacious74 -->
+            <div class="container">
+                <button class="button" (click)="onSubmit()" [disabled]="loginForm.invalid">Login</button>
+            </div>
+
+            <!-- <input type="submit" value="Login" (click)="onSubmit()"> -->
+            <!-- </div> -->
+            <!-- <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="#">Signup</a>
+            </div> -->
+        </div>
+    </form>
+</div>
+<!--ring div ends here-->
